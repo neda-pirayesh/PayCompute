@@ -1,0 +1,15 @@
+C:\LearnProject\PayComputee\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.deps.json
+C:\LearnProject\PayComputee\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.dll
+C:\LearnProject\PayComputee\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Entity.dll
+C:\LearnProject\PayComputee\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Entity.pdb
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.csprojAssemblyReference.cache
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.AssemblyInfoInputs.cache
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.AssemblyInfo.cs
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.csproj.CopyComplete
+C:\LearnProject\PayComputee\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.runtimeconfig.json
+C:\LearnProject\PayComputee\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.runtimeconfig.dev.json
+C:\LearnProject\PayComputee\PayCompute.Persistence\bin\Debug\netcoreapp3.1\PayCompute.Persistence.pdb
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.dll
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.pdb
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.genruntimeconfig.cache
+C:\LearnProject\PayComputee\PayCompute.Persistence\obj\Debug\netcoreapp3.1\PayCompute.Persistence.csproj.CoreCompileInputs.cache

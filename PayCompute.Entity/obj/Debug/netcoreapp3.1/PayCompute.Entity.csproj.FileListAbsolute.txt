@@ -1,0 +1,9 @@
+C:\LearnProject\PayComputee\PayCompute.Entity\bin\Debug\netcoreapp3.1\PayCompute.Entity.deps.json
+C:\LearnProject\PayComputee\PayCompute.Entity\bin\Debug\netcoreapp3.1\PayCompute.Entity.dll
+C:\LearnProject\PayComputee\PayCompute.Entity\bin\Debug\netcoreapp3.1\PayCompute.Entity.pdb
+C:\LearnProject\PayComputee\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.csprojAssemblyReference.cache
+C:\LearnProject\PayComputee\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.AssemblyInfoInputs.cache
+C:\LearnProject\PayComputee\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.AssemblyInfo.cs
+C:\LearnProject\PayComputee\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.csproj.CoreCompileInputs.cache
+C:\LearnProject\PayComputee\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.dll
+C:\LearnProject\PayComputee\PayCompute.Entity\obj\Debug\netcoreapp3.1\PayCompute.Entity.pdb
