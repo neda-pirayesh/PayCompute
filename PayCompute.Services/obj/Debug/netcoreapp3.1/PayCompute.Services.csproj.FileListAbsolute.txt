@@ -6,7 +6,8 @@ C:\LearnProject\PayComputee\PayCompute.Services\bin\Debug\netcoreapp3.1\PayCompu
 C:\LearnProject\PayComputee\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.csprojAssemblyReference.cache
 C:\LearnProject\PayComputee\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.AssemblyInfoInputs.cache
 C:\LearnProject\PayComputee\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.AssemblyInfo.cs
-C:\LearnProject\PayComputee\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.csproj.CoreCompileInputs.cache
 C:\LearnProject\PayComputee\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.csproj.CopyComplete
 C:\LearnProject\PayComputee\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.dll
 C:\LearnProject\PayComputee\PayCompute.Services\obj\Debug\netcoreapp3.1\PayCompute.Services.pdb
+C:\LearnProject\PayComputee\PayCompute.Services\bin\Debug\netcoreapp3.1\PayCompute.Persistence.dll
+C:\LearnProject\PayComputee\PayCompute.Services\bin\Debug\netcoreapp3.1\PayCompute.Persistence.pdb
