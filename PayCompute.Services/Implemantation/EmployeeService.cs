@@ -21,11 +21,11 @@ namespace PayCompute.Services.Implemantation
             await _context.Employees.AddAsync(newEmployee);
             await _context.SaveChangesAsync();
         }
-        public Employee GetByIdAsync(int employeeId) =>  _context.Employees.Where(e => e.Id == employeeId).FirstOrDefault();
+        public Employee GetById(int employeeId) =>  _context.Employees.Where(e => e.Id == employeeId).FirstOrDefault();
         
         public async Task Delete(int employeeId)
         {
-            var employee = GetByIdAsync(employeeId);
+            var employee = GetById(employeeId);
             _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();
 

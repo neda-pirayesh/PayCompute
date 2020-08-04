@@ -64,9 +64,6 @@ C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\PayCompute.Servi
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.csprojAssemblyReference.cache
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.AssemblyInfoInputs.cache
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.AssemblyInfo.cs
-C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.csproj.CoreCompileInputs.cache
-C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.MvcApplicationPartsAssemblyInfo.cs
-C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.MvcApplicationPartsAssemblyInfo.cache
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.RazorAssemblyInfo.cache
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.RazorAssemblyInfo.cs
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.TagHelpers.input.cache
@@ -92,3 +89,7 @@ C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.pdb
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.genruntimeconfig.cache
 C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.csproj.CoreCompileInputs.cache
+C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.MvcApplicationPartsAssemblyInfo.cs
+C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.MvcApplicationPartsAssemblyInfo.cache
