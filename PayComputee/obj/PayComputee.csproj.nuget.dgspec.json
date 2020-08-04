@@ -173,6 +173,9 @@
             "projectReferences": {
               "C:\\LearnProject\\PayComputee\\PayCompute.Entity\\PayCompute.Entity.csproj": {
                 "projectPath": "C:\\LearnProject\\PayComputee\\PayCompute.Entity\\PayCompute.Entity.csproj"
+              },
+              "C:\\LearnProject\\PayComputee\\PayCompute.Persistence\\PayCompute.Persistence.csproj": {
+                "projectPath": "C:\\LearnProject\\PayComputee\\PayCompute.Persistence\\PayCompute.Persistence.csproj"
               }
             }
           }

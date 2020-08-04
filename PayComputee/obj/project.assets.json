@@ -1457,7 +1457,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "PayCompute.Entity": "1.0.0"
+          "PayCompute.Entity": "1.0.0",
+          "PayCompute.Persistence": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PayCompute.Services.dll": {}
