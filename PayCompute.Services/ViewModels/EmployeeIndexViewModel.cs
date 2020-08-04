@@ -12,5 +12,7 @@ namespace PayCompute.Services.ViewModels
         public string Gender { get; set; }
         public string ImageUrl { get; set; }
         public DateTime DateJoin { get; set; }
+        public string Designation { get; set; }
+        public string City { get; set; }
     }
 }

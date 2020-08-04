@@ -90,3 +90,5 @@ C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\staticwebassets\
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.dll
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.pdb
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.genruntimeconfig.cache
+C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll

@@ -9,12 +9,12 @@ namespace PayCompute.Services
    public interface IEmployeeService
     {
         Task CreateAsync(Employee newEmployee);
-        Task<Employee> GetByIdAsync(int employeeId);
+        Employee GetByIdAsync(int employeeId);
         Task UpdateAsync(Employee employee);
         Task UpdateAsync(int id);
         Task Delete(int employeeId);
         decimal UnionFees(int id);
         decimal StudentLoanRepaymentAmount(int id, decimal totalAmount);
-        Task<IEnumerable<Employee>> GetAll();
+        IEnumerable<Employee> GetAll();
     }
 }

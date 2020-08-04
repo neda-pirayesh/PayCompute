@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using PayCompute.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace PayCompute.Services.ViewModels
 {
-    class EmployeeCreateViewModel
+    public class EmployeeCreateViewModel
     {
         public int Id { get; set; }
 
@@ -38,7 +39,8 @@ namespace PayCompute.Services.ViewModels
         [DataType(DataType.Date),Display(Name ="تاریخ تولد")]
         public DateTime DOB { get; set; }
         [DataType(DataType.Date), Display(Name = "تاریخ استخدام")]
-        public DateTime DateJoined { get; set; }
+        public string Phone{ get; set; }
+        public DateTime DateJoined { get; set; } = DateTime.UtcNow;
         [Required(ErrorMessage ="لطفا عنوان شغل را وارد نماسسد"),StringLength(100), Display(Name = "عنوان شغل")]
         public string Designation { get; set; }
 
