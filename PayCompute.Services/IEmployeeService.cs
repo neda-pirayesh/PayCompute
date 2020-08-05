@@ -9,7 +9,7 @@ namespace PayCompute.Services
    public interface IEmployeeService
     {
         Task CreateAsync(Employee newEmployee);
-        Employee GetByIdAsync(int employeeId);
+        Employee GetById(int employeeId);
         Task UpdateAsync(Employee employee);
         Task UpdateAsync(int id);
         Task Delete(int employeeId);
