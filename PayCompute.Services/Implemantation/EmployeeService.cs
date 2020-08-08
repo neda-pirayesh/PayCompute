@@ -42,7 +42,7 @@ namespace PayCompute.Services.Implemantation
 
         public async Task UpdateAsync(int id)
         {
-            var employee = GetByIdAsync(id);
+            var employee = GetById(id);
             _context.Update(employee);
             await _context.SaveChangesAsync();
         }

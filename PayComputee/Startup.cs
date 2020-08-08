@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AutoMapper;
 using PayComputee.Models;
+using PayCompute.Services;
+using PayCompute.Services.Implemantation;
 
 namespace PayComputee
 {
@@ -45,6 +47,9 @@ namespace PayComputee
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddScoped<IEmployeeService, EmployeeService>();
+
             
         }
 
