@@ -95,3 +95,4 @@ C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.MvcA
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\PayComputee.MvcApplicationPartsAssemblyInfo.cache
 C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs

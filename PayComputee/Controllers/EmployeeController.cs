@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Hosting.Internal;
@@ -16,9 +17,9 @@ namespace PayComputee.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
-        private readonly HostingEnvironment _hostingEnvironment;
+        private readonly IWebHostEnvironment _hostingEnvironment;
         private readonly IMapper _mapper;
-        public EmployeeController(IEmployeeService employeeService, HostingEnvironment hostingEnvironment, IMapper mapper)
+        public EmployeeController(IEmployeeService employeeService, IWebHostEnvironment hostingEnvironment, IMapper mapper)
         {
             _employeeService = employeeService;
             _hostingEnvironment = hostingEnvironment;

@@ -1,0 +1,61 @@
+﻿@model IEnumerable< PayCompute.Services.ViewModels.EmployeeIndexViewModel>
+
+
+@{ ViewBag.Title = "Employee";}
+
+<div class="row">
+    <div class="col-md-12 grid-margin">
+        <div class="card">>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="breadcrumb-item acive " aria-current="page">Employee List</li>
+
+                </ol>
+            </nav><br/><br />
+        <div class="row">
+            <div class="col-md-12 table-responsive-md">
+                <a class="btn btn-xs btn-outline-success float-md-right" asp-controller="Employee" asp-action="Create">New Emplyee</a>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Employee No.</th>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Designation </th>
+                            <th>City</th>
+                            <th>Joinded</th>
+                            <th class="text-warning">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+	                    {
+                        <tr>
+                            <td><a asp-action="Detail" asp-route-id="@item.Id">@item.EmployeeNo</a></td>
+                            <td>
+                                <img alt="image" src="@Url.Content(item.ImageUrl)" />
+                            </td>
+                            <td>@item.FullName</td>
+                            <td>@item.Gender</td>
+                            <td>@item.Designation</td>
+                            <td>@item.City</td>
+                            <td>@item.DateJoin</td>
+                            <td>
+                                <a class="text-primary" asp-action="Edit" asp-rout-id="@item.Id"><i class="fas fa-edit" ></i>Edit</a>
+                                <a class="text-success" asp-action="Detail" asp-rout-id="@item.Id"><i class="fas fa-bars"></i>Detail</a>
+                                <a class="text-danger" asp-action="Delete" asp-rout-id="@item.Id"><i class="fas fa-trash-alt"></i>Delete</a>
+
+                            </td>
+
+                        </tr>
+		 
+	                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
