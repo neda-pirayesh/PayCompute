@@ -41,7 +41,7 @@
                             <td>@item.Gender</td>
                             <td>@item.Designation</td>
                             <td>@item.City</td>
-                            <td>@item.DateJoin</td>
+                            <td>@item.DateJoin.ToString("yyyy/mmm/dd")</td>
                             <td>
                                 <a class="text-primary" asp-action="Edit" asp-rout-id="@item.Id"><i class="fas fa-edit" ></i>Edit</a>
                                 <a class="text-success" asp-action="Detail" asp-rout-id="@item.Id"><i class="fas fa-bars"></i>Detail</a>

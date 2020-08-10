@@ -81,11 +81,11 @@ namespace PayComputee.Controllers
                     var uploadDir = @"images/employee";
                     var fileName = Path.GetFileNameWithoutExtension(model.ImageUrl.FileName);
                     var extension = Path.GetExtension(model.ImageUrl.FileName);
-                    var webRootPath = _hostingEnvironment.ContentRootPath;
+                    var webRootPath = _hostingEnvironment.WebRootPath;
                     var newFileName = DateTime.UtcNow.ToString("yymmssfff") + fileName + extension;
                     var path = Path.Combine(webRootPath, uploadDir, newFileName);
                     await model.ImageUrl.CopyToAsync(new FileStream(path, FileMode.Create));
-                    employee.ImageUrl = "/" + uploadDir + "/" + fileName;
+                    employee.ImageUrl = "/" + uploadDir + "/" + newFileName;
                 }
                 await _employeeService.CreateAsync(employee);
                 return RedirectToAction(nameof(Index));
