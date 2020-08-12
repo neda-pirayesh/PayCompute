@@ -19,7 +19,7 @@ namespace PayComputee.Controllers
 
         public IActionResult Index()
         {
-            var payRecore = _payComputationService.GetAll().Select(p => new PaymentRecordIndexViewModel
+            var payRecord = _payComputationService.GetAll().Select(p => new PaymentRecordIndexViewModel
             {
                 Id = p.Id,
                 EmployeeId = p.EmployeeId,
@@ -33,7 +33,12 @@ namespace PayComputee.Controllers
                 Employee=p.Employee
 
             }) ;
-            return View();
+            return View(payRecord);
+        }
+
+        public IActionResult Create()
+        { 
+            return View()
         }
     }
 }
