@@ -19,9 +19,8 @@ namespace PayComputee.Models
                 .ForMember(dest => dest.ImageUrl, act => act.Ignore());
 
             CreateMap<Employee, EmployeeDetailViewModel>();
-              
+            CreateMap<PaymentRecord, PaymentRecordCreateViewModel>();
 
-
-        }
+          }
     }
 }
