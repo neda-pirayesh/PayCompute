@@ -140,24 +140,26 @@ namespace PayComputee.Controllers
                 {
                     return NotFound();
                 }
-                var newEmployee= _mapper.Map<Employee>(model);
 
-                //employee.EmployeeNo = model.EmployeeNo;
-                //employee.FirstName = model.FirstName;
-                //employee.LastName = model.LastName;
-                //employee.MiddleName = model.MiddleName;
-                //employee.NationalInsuranceNo = model.NationalInsuranceNo;
-                //employee.Gender = model.Gender;
-                //employee.Email = model.Email;
-                //employee.DOB = model.DOB;
-                //employee.DateJoined = model.DateJoined;
-                //employee.Phone = model.Phone;
-                //employee.Designation = model.Designation;
-                //employee.PaymentMethod = model.PaymentMethod;
-                //employee.StudentLoan = model.StudentLoan;
-                //employee.Address = model.Address;
-                //employee.City = model.City;
-                //employee.PostCode = model.PostCode;
+
+                employee.EmployeeNo = model.EmployeeNo;
+                employee.FirstName = model.FirstName;
+                employee.LastName = model.LastName;
+                employee.MiddleName = model.MiddleName;
+                employee.NationalInsuranceNo = model.NationalInsuranceNo;
+                employee.Gender = model.Gender;
+                employee.Email = model.Email;
+                employee.DOB = model.DOB;
+                employee.DateJoined = model.DateJoined;
+                employee.Phone = model.Phone;
+                employee.Designation = model.Designation;
+                employee.PaymentMethod = model.PaymentMethod;
+                employee.StudentLoan = model.StudentLoan;
+                employee.Address = model.Address;
+                employee.City = model.City;
+                employee.PostCode = model.PostCode;
+                employee.UnionMember = model.UnionMember;
+                employee.FullName = model.FullName;
 
 
                 if (model.ImageUrl != null && model.ImageUrl.Length > 0)
@@ -166,11 +168,11 @@ namespace PayComputee.Controllers
                     var uploadDir = @"images/employee";
                     var fileName = Path.GetFileNameWithoutExtension(model.ImageUrl.FileName);
                     var extension = Path.GetExtension(model.ImageUrl.FileName);
-                    var webRootPath = _hostingEnvironment.ContentRootPath;
+                    var webRootPath = _hostingEnvironment.WebRootPath;
                     var newFileName = DateTime.UtcNow.ToString("yymmssfff") + fileName + extension;
                     var path = Path.Combine(webRootPath, uploadDir, newFileName);
                     await model.ImageUrl.CopyToAsync(new FileStream(path, FileMode.Create));
-                    employee.ImageUrl = "/" + uploadDir + "/" + fileName;
+                    employee.ImageUrl = "/" + uploadDir + "/" + newFileName;
 
 
                 }

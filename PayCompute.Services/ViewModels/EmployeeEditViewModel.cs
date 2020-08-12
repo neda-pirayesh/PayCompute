@@ -27,7 +27,15 @@ namespace PayCompute.Services.ViewModels
         [Display(Name = "نام خانوادگی")]
 
         public string LastName { get; set; }
-       
+
+        public string FullName
+        {
+            get
+            {
+                return FirstName + (string.IsNullOrEmpty(MiddleName) ? " " : (" " + (char?)MiddleName[0] + ".").ToUpper()) + LastName;
+            }
+        }
+
         public string Gender { get; set; }
 
         [Display(Name = "تصویر")]

@@ -97,3 +97,6 @@ C:\LearnProject\PayComputee\PayComputee\bin\Debug\netcoreapp3.1\AutoMapper.Exten
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs
 C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Create.cshtml.g.cs
+C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Edit.cshtml.g.cs
+C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Detail.cshtml.g.cs
+C:\LearnProject\PayComputee\PayComputee\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Delete.cshtml.g.cs
