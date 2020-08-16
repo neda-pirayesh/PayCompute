@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IsY6JeLUjFjI18qdsTvLgdOjkn0gNhLfMnwkoXAG1yE5v3TIBZLO0M3OSec324J3rF/wssL/EEJBc//d/BGgxw==",
+  "dgSpecHash": "PRqHLt7eQeOwDUEg4LzuRMF2O7w8i2cYi85K2n9CWs6ytXENwrSg3zUyD/0X6E3v0XuhQPgdMRVQQ3l0vh0plQ==",
   "success": true,
   "projectFilePath": "C:\\LearnProject\\PayComputee\\PayCompute.Services\\PayCompute.Services.csproj",
   "expectedPackageFiles": [
@@ -58,8 +58,11 @@
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\2.2.0\\microsoft.extensions.localization.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging\\3.1.3\\microsoft.extensions.logging.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.3\\microsoft.extensions.logging.configuration.3.1.3.nupkg.sha512",
+    "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.3\\microsoft.extensions.logging.console.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.objectpool\\2.2.0\\microsoft.extensions.objectpool.2.2.0.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
+    "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.3\\microsoft.extensions.options.configurationextensions.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.webencoders\\2.2.0\\microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",

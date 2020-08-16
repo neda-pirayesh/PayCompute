@@ -49,6 +49,9 @@ namespace PayComputee
             services.AddRazorPages();
 
             services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IPayComputationService, PayComputationService>();
+            services.AddScoped<INationalInsuranceContribitionService, NationalInsuranceContribitionService>();
+            services.AddScoped<ITaxService, TaxService>();
 
             
         }

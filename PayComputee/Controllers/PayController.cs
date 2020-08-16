@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using PayCompute.Entity;
 using PayCompute.Services;
 using PayCompute.Services.ViewModels;
+using RotativaCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,7 +53,8 @@ namespace PayComputee.Controllers
                 Year = _payComputationService.GetTaxYearById(p.TaxYearId).YearOfTax,
                 TotalEarnings=p.TotalEarnings,
                 Totaldeduction=p.TotalDeduction,
-                Employee=p.Employee
+                Employee=p.Employee,
+                NetPayment=p.NetPayment
 
             }) ;
             return View(payRecord);
@@ -69,14 +71,14 @@ namespace PayComputee.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(PaymentRecordCreateViewModel model)
+        public async Task<IActionResult> Create(PaymentRecordCreateViewModel model)
         {
             if (ModelState.IsValid)
             {
 
                 var payRecord = new PaymentRecord()
                 {
-                    Id = model.Id,
+                    
                     EmployeeId = model.EmployeeId,
                     FullName=_employeeService.GetById(model.EmployeeId).FullName,
                     NiNo=_employeeService.GetById(model.EmployeeId).NationalInsuranceNo,
@@ -88,7 +90,7 @@ namespace PayComputee.Controllers
                     HoursWorked=model.HoursWorked,
                     ContractualHours=model.ContractualHours,
                     OvertimeHours=overtimeHrs=_payComputationService.OvertimeHours(model.HoursWorked,model.ContractualHours),
-                    ContractualEarnings= contractualEarnings=_payComputationService.ContractualEarnings(model.ContractualHours,model.ContractualHours, model.HourlyRate),
+                    ContractualEarnings= contractualEarnings=_payComputationService.ContractualEarnings(model.ContractualHours,model.HoursWorked, model.HourlyRate),
                     OvertimeEarnings=overTimeEarnings=_payComputationService.OvertimeEarnings(_payComputationService.OvertimeRate(model.HourlyRate), overtimeHrs),
                     TotalEarnings=totalEarnings=_payComputationService.TotalEarnings(overTimeEarnings, contractualEarnings),
                     Tax=tax=_taxService.TaxAmount(totalEarnings),
@@ -99,7 +101,7 @@ namespace PayComputee.Controllers
                     NetPayment=_payComputationService.NetPayment(totalEarnings,totalDeduction)
 
                 };
-                _payComputationService.CreateAsync(payRecord);
+                await _payComputationService.CreateAsync(payRecord);
                 return RedirectToAction(nameof(Index));
             }
 
@@ -184,6 +186,15 @@ namespace PayComputee.Controllers
                 NetPayment = paymentRecord.NetPayment
             };
             return View(model);
+        }
+
+        public IActionResult GeneratePayslipPdf(int id)
+        {
+            var payslip = new ActionAsPdf("Payslip", new { id = id })
+            {
+                FileName = "paylip.pdf"
+            };
+            return payslip;
         }
     }
 }

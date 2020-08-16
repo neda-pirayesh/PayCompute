@@ -84,6 +84,6 @@ namespace PayCompute.Services.Implemantation
         => overtimeEarnings + contractualEarnings;
 
         public TaxYear GetTaxYearById(int id)
-        => _context.TaxYears.Where(y => y.Id == id);
+        => _context.TaxYears.Where(y => y.Id == id).FirstOrDefault();
     }
 }

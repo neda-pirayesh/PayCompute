@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Y4YaMDDBq8QXuXeetO5OZQZGndqP/r+PWg6CVRoe/imvZYXBrKFK0hYKtnvXHfDUXiVFb+2XDvb0X5NymI7GGA==",
+  "dgSpecHash": "DwqmihxlJNPrFeZc5YzTdwcp6GJACfRKkvh2q38wYqQrq3PyCTWcQaaPFxOaizLR7tFVGw05zjXIgB5ubs2MGw==",
   "success": true,
   "projectFilePath": "C:\\LearnProject\\PayComputee\\PayCompute.Persistence\\PayCompute.Persistence.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,10 @@
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.3\\microsoft.extensions.identity.stores.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging\\3.1.3\\microsoft.extensions.logging.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.3\\microsoft.extensions.logging.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.3\\microsoft.extensions.logging.configuration.3.1.3.nupkg.sha512",
+    "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.3\\microsoft.extensions.logging.console.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.options\\3.1.3\\microsoft.extensions.options.3.1.3.nupkg.sha512",
+    "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.3\\microsoft.extensions.options.configurationextensions.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\neda\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
