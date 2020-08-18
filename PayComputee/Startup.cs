@@ -16,6 +16,7 @@ using AutoMapper;
 using PayComputee.Models;
 using PayCompute.Services;
 using PayCompute.Services.Implemantation;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace PayComputee
 {
@@ -43,8 +44,35 @@ namespace PayComputee
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddRoles<IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+               .AddEntityFrameworkStores<ApplicationDbContext>()
+               .AddDefaultTokenProviders();
+
+            services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.ApplicationScheme,
+               opt =>
+               {
+                    //configure your other properties
+                    opt.LoginPath = "/Identity/Account/Login";
+               });
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 1;
+                options.Lockout.DefaultLockoutTimeSpan=TimeSpan.FromMinutes(10);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
+                options.Lockout.AllowedForNewUsers = true;
+            });
+
             services.AddControllersWithViews();
             services.AddRazorPages();
 
@@ -57,7 +85,9 @@ namespace PayComputee
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
+                                    UserManager<IdentityUser> userManager,
+                                    RoleManager<IdentityRole> roleManager  )
         {
             if (env.IsDevelopment())
             {
@@ -76,7 +106,10 @@ namespace PayComputee
             app.UseRouting();
 
             app.UseAuthentication();
+            DataSeedingInitializer.UserANdRoleSeedAsync(userManager, roleManager).Wait();
             app.UseAuthorization();
+
+            
 
             app.UseEndpoints(endpoints =>
             {

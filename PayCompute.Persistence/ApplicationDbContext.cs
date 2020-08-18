@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using PayCompute.Entity;
@@ -8,7 +9,7 @@ using System.Text;
 
 namespace PayCompute.Persistence
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext: IdentityDbContext
     {
 
         public static readonly ILoggerFactory _loggerFactory = LoggerFactory.Create(builder =>

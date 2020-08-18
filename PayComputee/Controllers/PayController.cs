@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PayCompute.Entity;
 using PayCompute.Services;
@@ -11,6 +12,8 @@ using System.Threading.Tasks;
 
 namespace PayComputee.Controllers
 {
+    [Authorize(Roles = "Admin,Manager")]
+
     public class PayController:Controller
     {
         private readonly IPayComputationService _payComputationService;
@@ -60,6 +63,7 @@ namespace PayComputee.Controllers
             return View(payRecord);
         }
 
+        [Authorize(Roles ="Admin")]
         public IActionResult Create()
         {
             ViewBag.taxYears = _payComputationService.GetAllTaxYear();
@@ -69,8 +73,10 @@ namespace PayComputee.Controllers
             return View(model); 
         }
 
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(PaymentRecordCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -150,6 +156,7 @@ namespace PayComputee.Controllers
 
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Payslip(int id)
         {
             var paymentRecord = _payComputationService.GetById(id);
@@ -188,6 +195,7 @@ namespace PayComputee.Controllers
             return View(model);
         }
 
+       
         public IActionResult GeneratePayslipPdf(int id)
         {
             var payslip = new ActionAsPdf("Payslip", new { id = id })
